@@ -562,18 +562,25 @@ const contactSvgs = {
 function ContactIcon({ icon }) {
   const svg = contactSvgs[icon] || "";
   return html`<span
+    aria-hidden="true"
     className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 dark:bg-white/10 dark:text-slate-300"
     dangerouslySetInnerHTML=${{ __html: svg }}
   />`;
 }
 
-function ToggleGroup({ options, value, onChange }) {
+function ToggleGroup({ options, value, onChange, label }) {
   return html`
-    <div className="inline-flex w-auto rounded-full border border-slate-200/90 bg-white/95 p-1 shadow-sm dark:border-white/10 dark:bg-white/5">
+    <div
+      role="group"
+      aria-label=${label || "Opções"}
+      className="inline-flex w-auto rounded-full border border-slate-200/90 bg-white/95 p-1 shadow-sm dark:border-white/10 dark:bg-white/5"
+    >
       ${options.map(
         (option) => html`
           <button
             key=${option.value}
+            aria-pressed=${value === option.value ? "true" : "false"}
+            aria-label=${option.ariaLabel || option.label}
             className=${`rounded-full px-3 py-2 text-sm transition ${
               value === option.value
                 ? "bg-slate-900 text-white dark:bg-[#ff9464]/15 dark:text-white"
@@ -710,18 +717,20 @@ function App() {
 
           <div className="flex shrink-0 items-center gap-2">
             <${ToggleGroup}
+              label=${lang === "pt" ? "Selecionar idioma" : "Select language"}
               options=${[
-                { label: "\uD83C\uDDE7\uD83C\uDDF7 PT", value: "pt" },
-                { label: "\uD83C\uDDFA\uD83C\uDDF8 EN", value: "en" }
+                { label: "\uD83C\uDDE7\uD83C\uDDF7 PT", value: "pt", ariaLabel: "Português" },
+                { label: "\uD83C\uDDFA\uD83C\uDDF8 EN", value: "en", ariaLabel: "English" }
               ]}
               value=${lang}
               onChange=${setLang}
             />
             <${ToggleGroup}
+              label=${lang === "pt" ? "Selecionar tema" : "Select theme"}
               options=${[
-                { label: "Auto", value: "auto" },
-                { label: "Light", value: "light" },
-                { label: "Dark", value: "dark" }
+                { label: "Auto", value: "auto", ariaLabel: lang === "pt" ? "Tema Automático" : "Auto Theme" },
+                { label: "Light", value: "light", ariaLabel: lang === "pt" ? "Tema Claro" : "Light Theme" },
+                { label: "Dark", value: "dark", ariaLabel: lang === "pt" ? "Tema Escuro" : "Dark Theme" }
               ]}
               value=${themePreference}
               onChange=${setThemePreference}

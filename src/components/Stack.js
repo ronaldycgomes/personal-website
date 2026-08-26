@@ -15,7 +15,7 @@ export function Stack({ locale }) {
         <p className="mt-5 leading-8 text-slate-600 dark:text-slate-300">${locale.stack.intro}</p>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
         ${locale.stackGroups.map(
           (group, i) => html`
             <article

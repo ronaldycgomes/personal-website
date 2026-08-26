@@ -10,7 +10,7 @@ export function Highlights({ highlights }) {
         <p className="mb-3 text-[0.78rem] uppercase tracking-[0.18em] text-orange-500">${highlights.eyebrow}</p>
         <h2 className="font-serif text-[clamp(2rem,4vw,3.4rem)] leading-[0.94]">${highlights.title}</h2>
       </div>
-      <div className="mt-6 grid gap-[18px] lg:grid-cols-4">
+      <div className="mt-6 grid gap-[18px] sm:grid-cols-2 lg:grid-cols-4">
         ${highlights.items.map(
           (item, i) => html`
             <article

@@ -1,0 +1,42 @@
+export const logoMap = {
+  mercadolivre: { src: "./assets/logos/mercadolivre.png", bg: null },
+  soc:          { src: "./assets/logos/soc.svg", bg: "#FFFFFF", darkText: true },
+  mazzatech:    { src: "./assets/logos/mazzatech.png", bg: "#FFFFFF", darkText: true },
+  zurich:       { src: "./assets/logos/zurich.svg", bg: "#FFFFFF" },
+  ufabc:        { src: "./assets/logos/ufabc.svg", bg: "#FFFFFF" },
+  etec:         { src: "./assets/logos/etec.png", bg: "#FFFFFF" },
+  fiap:         { src: "./assets/logos/fiap.png", bg: null }
+};
+
+export const techIconMap = {
+  "Java":            "./assets/logos/tech/java.svg",
+  "Kotlin":          "./assets/logos/tech/kotlin.svg",
+  "Go":              "./assets/logos/tech/go.svg",
+  "Spring Boot":     "./assets/logos/tech/spring.svg",
+  "Spring Security": "./assets/logos/tech/spring.svg",
+  "Spring Data":     "./assets/logos/tech/spring.svg",
+  "Node.js":         "./assets/logos/tech/nodejs.svg",
+  "React":           "./assets/logos/tech/react.svg",
+  "TypeScript":      "./assets/logos/tech/typescript.svg",
+  "JavaScript":      "./assets/logos/tech/javascript.svg",
+  "HTML":            "./assets/logos/tech/html5.svg",
+  "CSS":             "./assets/logos/tech/css3.svg",
+  "Bootstrap":       "./assets/logos/tech/bootstrap.svg",
+  "AWS":             "./assets/logos/tech/aws.svg",
+  "EC2":             "./assets/logos/tech/amazonec2.svg",
+  "S3":              "./assets/logos/tech/amazons3.svg",
+  "Lambda":          "./assets/logos/tech/awslambda.svg",
+  "CloudWatch":      "./assets/logos/tech/amazoncloudwatch.svg",
+  "DynamoDB":        "./assets/logos/tech/amazondynamodb.svg",
+  "API Gateway":     "./assets/logos/tech/amazonapigateway.svg",
+  "SNS":             "./assets/logos/tech/aws.svg",
+  "SQS":             "./assets/logos/tech/amazonsqs.svg",
+  "SES":             "./assets/logos/tech/aws.svg",
+  "BigQuery":        "./assets/logos/tech/googlecloud.svg",
+  "MongoDB":         "./assets/logos/tech/mongodb.svg",
+  "MySQL":           "./assets/logos/tech/mysql.svg",
+  "ElasticSearch":   "./assets/logos/tech/elasticsearch.svg",
+  "GitHub":          "./assets/logos/tech/github.svg",
+  "GitLab":          "./assets/logos/tech/gitlab.svg",
+  "Jest":            "./assets/logos/tech/jest.svg"
+};

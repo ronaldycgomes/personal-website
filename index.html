@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronaldy Gomes | Software Engineer</title>
+    <meta
+      name="description"
+      content="Landing page pessoal de Ronaldy Gomes, Software Engineer com foco em sistemas escaláveis, prevenção a fraudes, cloud e IA aplicada ao desenvolvimento."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ronaldy Gomes | Software Engineer" />
+    <meta property="og:description" content="Software engineer focused on scalable systems, fraud prevention, and AI-assisted development." />
+    <meta property="og:image" content="https://github.com/ronaldycgomes.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ronaldy Gomes | Software Engineer" />
+    <meta name="twitter:description" content="Software engineer focused on scalable systems, fraud prevention, and AI-assisted development." />
+    <meta name="twitter:image" content="https://github.com/ronaldycgomes.png" />
+
+    <!-- Google Fonts — Cross-platform serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Avenir Next", "Segoe UI", "sans-serif"],
+              serif: ["Lora", "Iowan Old Style", "Georgia", "serif"]
+            },
+            boxShadow: {
+              soft: "0 20px 48px rgba(15, 23, 42, 0.08)",
+              deep: "0 28px 72px rgba(0, 0, 0, 0.34)"
+            },
+            backgroundImage: {
+              "hero-light":
+                "radial-gradient(circle at top left, rgba(249,115,22,0.12), transparent 24rem), radial-gradient(circle at top right, rgba(14,165,233,0.14), transparent 28rem), linear-gradient(180deg, #f8fafc, #eef4f8)",
+              "hero-dark":
+                "radial-gradient(circle at top left, rgba(255,148,100,0.14), transparent 28rem), radial-gradient(circle at top right, rgba(152,218,222,0.12), transparent 32rem), linear-gradient(180deg, #0a1118, #111b24)"
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 34px 34px;
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.42), transparent 78%);
+      }
+
+      body[data-theme="dark"]::before {
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      }
+
+      /* Offset scroll targets so the sticky header doesn't cover them */
+      section[id],
+      article[id] {
+        scroll-margin-top: 90px;
+      }
+
+      /* Mobile: header is taller (2 rows), needs more offset */
+      @media (max-width: 767px) {
+        section[id],
+        article[id] {
+          scroll-margin-top: 130px;
+        }
+      }
+      /* Scroll reveal */
+      .reveal-pending {
+        opacity: 0;
+        transform: translateY(22px);
+        will-change: transform, opacity;
+      }
+
+      .is-revealed {
+        transition: opacity 0.78s cubic-bezier(0.16, 1, 0.3, 1),
+                    transform 0.78s cubic-bezier(0.16, 1, 0.3, 1);
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      /* Respeitar preferência de sistema "Reduzir movimento" */
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-pending {
+          opacity: 1;
+          transform: none;
+        }
+        .is-revealed {
+          transition: none;
+        }
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.3.1",
+          "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+          "htm": "https://esm.sh/htm@3.1.1"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./app.js?v=10"></script>
+  </body>
+</html>
+

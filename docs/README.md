@@ -77,6 +77,11 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
    * Adição e mapeamento de ícones oficiais de alta fidelidade para Python, Docker, Claude, OpenAI, Gemini, Git, MLOps, DevEx, Test Automation e Prompt Engineering.
 11. **Projeto Pessoal SnapBrick AI:**
    * Substituição da seção de certificações pelo card estruturado do projeto de Visão Computacional SnapBrick AI, com badge de status em desenvolvimento, layout centralizado e tech stack completa (PyTorch, YOLOv11, FastAPI, BlenderProc, React Native, PostgreSQL).
+12. **Barra de Progresso de Leitura (ScrollProgress):**
+   * Indicador sutil de 2.5px com gradiente no topo do navegador que acompanha a rolagem da página.
+13. **Botão Flutuante Voltar ao Topo (BackToTop) & Blindagem de Layout:**
+   * Botão com efeito glassmorphism e rolagem suave para o topo ao passar de 350px.
+   * Blindagens preventivas de responsividade: grid elástico no Hero (`minmax(0, 0.92fr)`), `overflow-x-hidden` global e dimensionamento adaptativo em dispositivos móveis.
 
 ---
 

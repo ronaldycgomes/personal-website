@@ -42,6 +42,7 @@ export const contentEn = {
       ctaTitle: "Let's connect",
       items: [
         { label: "Email", value: "gomesronaldy@hotmail.com", href: "mailto:gomesronaldy@hotmail.com", icon: "email" },
+        { label: "WhatsApp", value: "+55 13 97416-3101", href: "https://wa.me/5513974163101?text=Hello%20Ronaldy,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!", icon: "whatsapp" },
         { label: "Phone", value: "+55 13 97416-3101", href: "tel:+5513974163101", icon: "phone" },
         { label: "LinkedIn", value: "ronaldy-gomes", href: "https://www.linkedin.com/in/ronaldy-gomes", icon: "linkedin" },
         { label: "GitHub", value: "ronaldycgomes", href: "https://github.com/ronaldycgomes", icon: "github" }

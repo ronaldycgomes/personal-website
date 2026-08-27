@@ -1,6 +1,6 @@
 import React from "react";
 import htm from "htm";
-import { techIconMap } from "../../config/logos.js";
+import { techIconMap } from "../../config/logos.js?v=20";
 
 const html = htm.bind(React.createElement);
 

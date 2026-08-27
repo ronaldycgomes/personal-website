@@ -1,6 +1,6 @@
 import React from "react";
 import htm from "htm";
-import { TechPill } from "./ui/TechPill.js";
+import { TechPill } from "./ui/TechPill.js?v=20";
 
 const html = htm.bind(React.createElement);
 

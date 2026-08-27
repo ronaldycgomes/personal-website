@@ -56,14 +56,38 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
 ### ✅ Melhorias Concluídas:
 1. **Refatoração Arquitetural Modular (`src/`):**
    * Quebra do monólito `app.js` em módulos especializados: `src/data/` (i18n), `src/config/` (logos), `src/components/` (seções) e `src/components/ui/` (componentes reutilizáveis).
-2. **Higienização de Assets (`assets/`):**
+2. **Botão de Download de CV em PDF:**
+   * Botão de chamada para ação (*CTA*) no Hero com suporte a download direto do currículo em PDF nos dois idiomas (`pt` e `en`).
+3. **Botão de Copiar E-mail e Telefone (1-Click Clipboard + Toast Feedback):**
+   * Micro-interação no card de contato com animação e tooltip (*"Copiado!"*) ao clicar para copiar e-mail, WhatsApp e telefone.
+4. **Canal Direto do WhatsApp:**
+   * Inclusão do WhatsApp com mensagem personalizada pré-formatada na seção de contatos.
+5. **Higienização de Assets (`assets/`):**
    * Remoção de arquivos duplicados e órfãos (`profile.jpg`, `fiap.jpg`, `ml_full.svg`, `mercadolivre.svg`).
-3. **SEO Estruturado (Schema.org / JSON-LD):**
+6. **SEO Estruturado (Schema.org / JSON-LD):**
    * Inserção de dados estruturados semânticos `Person` para indexação em rich snippets no Google.
-4. **Acessibilidade e Semântica (a11y):**
+7. **Acessibilidade e Semântica (a11y):**
    * Atributos `aria-label`, `aria-pressed`, `role="group"` e `aria-hidden="true"` implementados nos controles e ícones.
-5. **Otimização de Imagem para WebP:**
+8. **Otimização de Imagem para WebP:**
    * Redução de 93.5% do payload da foto de perfil (~29 KB).
+9. **Posicionamento & Copywriting Técnico (MLOps, Fraud Prevention & DevEx):**
+   * Atualização de idade (25 anos) e alinhamento de escopo para **MLOps** e **Fraud Prevention** no Mercado Livre.
+   * Destaque para atuação em **Developer Experience (DevEx)** utilizando ecossistemas Claude (Anthropic), OpenAI e Google (Gemini).
+10. **Novos Ícones Oficiais em SVG:**
+   * Adição e mapeamento de ícones oficiais de alta fidelidade para Python, Docker, Claude, OpenAI, Gemini, Git, MLOps, DevEx, Test Automation e Prompt Engineering.
+11. **Projeto Pessoal SnapBrick AI:**
+   * Substituição da seção de certificações pelo card estruturado do projeto de Visão Computacional SnapBrick AI, com badge de status em desenvolvimento, layout centralizado e tech stack completa (PyTorch, YOLOv11, FastAPI, BlenderProc, React Native, PostgreSQL).
+12. **Barra de Progresso de Leitura (ScrollProgress):**
+   * Indicador sutil de 2.5px com gradiente no topo do navegador que acompanha a rolagem da página.
+13. **Botão Flutuante Voltar ao Topo (BackToTop) & Blindagem de Layout:**
+   * Botão com efeito glassmorphism e rolagem suave para o topo ao passar de 350px.
+   * Blindagens preventivas de responsividade: grid elástico no Hero (`minmax(0, 0.92fr)`), `overflow-x-hidden` global e dimensionamento adaptativo em dispositivos móveis.
+14. **Suporte PWA & Web App Manifest (`manifest.json`):**
+   * Manifesto PWA completo para instalação como Web App na tela inicial de smartphones (iOS/Android) com suporte a tema dark/light dinâmico (`theme-color`).
+15. **Favicon Vetorial Oficial (`assets/favicon.svg`):**
+   * Monograma RG com gradiente de marca e suporte nativo a todas as resoluções e telas Retina.
+16. **SEO Canônico & Dados Estruturados Enriquecidos:**
+   * Tag canônica (`link rel="canonical"`) e expansão do Schema.org com entidades de MLOps, DevEx e Machine Learning Pipelines.
 
 ---
 
@@ -75,6 +99,7 @@ personal-website/
 ├── index.html          # Ponto de entrada HTML, importmaps, Tailwind CDN e meta tags
 ├── assets/             # Recursos estáticos 100% locais
 │   ├── profile.webp    # Foto de perfil otimizada (WebP ~29KB)
+│   ├── cv-ronaldy-gomes.pdf # Currículo para download direto
 │   └── logos/          # Vetores e imagens locais
 │       ├── *.svg / *.png / *.jpg
 │       └── tech/       # SVGs das tecnologias (Java, Spring, AWS, React, etc.)
@@ -126,14 +151,14 @@ Acesse `http://localhost:3000` no seu navegador.
 
 | Prioridade | Ação / Melhoria | Impacto Técnico & Negócio | Esforço | Detalhes da Implementação |
 | :--- | :--- | :--- | :---: | :--- |
-| 🟡 **Média** | **Botão de Copiar E-mail & Feedback de Copiado** | **Melhoria de UX** | ~10 min | Incluir ação de cópia com 1 clique para a área de transferência (*clipboard*) com animação/tooltip ("Copiado!") na seção de contato. |
-| 🟡 **Média** | **Botão de Download de CV em PDF** | **Conversão profissional** | ~5 min | Adicionar botão de chamada para ação (*CTA*) no Hero ou Header permitindo download direto do currículo em PDF. |
 | 🟢 **Baixa** | **Favicons Multi-dispositivo & Web App Manifest** | **Experiência Mobile/PWA** | ~10 min | Gerar ícone Apple Touch, `favicon.ico` e arquivo `manifest.json` para permitir salvar o portfólio como atalho na tela inicial do celular. |
+| 🟢 **Baixa** | **Barra de Progresso de Scroll no Topo** | **Polimento Visual / UI** | ~5 min | Linha gradiente no topo que indica a porcentagem de leitura da página. |
+| 🟢 **Baixa** | **Botão Voltar ao Topo Flutuante** | **Usabilidade Mobile** | ~5 min | Botão sutil com seta que aparece ao rolar mais de 40% da página. |
 | 🟢 **Baixa** | **Compilação Estática do Tailwind CSS** | **Performance máxima** | ~15 min | Substituir a engine em runtime do CDN (~3MB) por um arquivo `dist/styles.css` minificado (~12 KB) para eliminar bloqueios de renderização (*FCP*). |
 
 ---
 
-## 8. Guia de Continuidade de Contexto para Sessões e Agentes
+## 7. Guia de Continuidade de Contexto para Sessões e Agentes
 
 Para retomar o desenvolvimento deste projeto em uma nova sessão do assistente de IA ou por outros engenheiros:
 1. **Arquivo Fonte de Verdade:** Este arquivo ([`docs/README.md`](file:///Users/ronaldycgomes/Desktop/projects/personal-website/docs/README.md)) serve como documentação viva e ponto de partida para qualquer análise.

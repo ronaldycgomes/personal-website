@@ -44,7 +44,6 @@ export const contentPt = {
       items: [
         { label: "E-mail", value: "gomesronaldy@hotmail.com", href: "mailto:gomesronaldy@hotmail.com", icon: "email" },
         { label: "WhatsApp", value: "+55 13 97416-3101", href: "https://wa.me/5513974163101?text=Ol%C3%A1%20Ronaldy,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar!", icon: "whatsapp" },
-        { label: "Telefone", value: "+55 13 97416-3101", href: "tel:+5513974163101", icon: "phone" },
         { label: "LinkedIn", value: "ronaldy-gomes", href: "https://www.linkedin.com/in/ronaldy-gomes", icon: "linkedin" },
         { label: "GitHub", value: "ronaldycgomes", href: "https://github.com/ronaldycgomes", icon: "github" }
       ]

@@ -96,6 +96,8 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
    * Configuração de rastreamento com sitemap multilíngue para Google Search Console e Bing Webmaster Tools.
 18. **Otimização de LCP & Hints de Performance:**
    * Preload da foto de perfil, atributos `fetchpriority="high"` e `decoding="async"`, e `preconnect` para CDN de módulos ESM (`esm.sh`).
+19. **Calibração de Switches Mobile (Header & ToggleGroup):**
+   * Escala fluida e compacta dos botões de tema e idioma em smartphones para eliminar qualquer estouro de largura.
 
 ---
 

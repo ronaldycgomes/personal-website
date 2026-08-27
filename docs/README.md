@@ -70,6 +70,11 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
    * Atributos `aria-label`, `aria-pressed`, `role="group"` e `aria-hidden="true"` implementados nos controles e ícones.
 8. **Otimização de Imagem para WebP:**
    * Redução de 93.5% do payload da foto de perfil (~29 KB).
+9. **Posicionamento & Copywriting Técnico (MLOps, Fraud Prevention & DevEx):**
+   * Atualização de idade (25 anos) e alinhamento de escopo para **MLOps** e **Fraud Prevention** no Mercado Livre.
+   * Destaque para atuação em **Developer Experience (DevEx)** utilizando ecossistemas Claude (Anthropic), OpenAI e Google (Gemini).
+10. **Novos Ícones Oficiais em SVG:**
+   * Adição e mapeamento de ícones oficiais de alta fidelidade para Python, Docker, Claude, OpenAI, Gemini, Git, MLOps, DevEx, Test Automation e Prompt Engineering.
 
 ---
 

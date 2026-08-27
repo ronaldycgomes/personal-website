@@ -3,39 +3,39 @@ import { logoMap } from "../config/logos.js";
 export const contentEn = {
   brand: "Ronaldy Gomes",
   hero: {
-    eyebrow: "Software Engineer · Anti-fraud · Cloud · AI",
+    eyebrow: "Software Developer · Fraud Prevention · MLOps · Cloud & AI",
     title: "Ronaldy Gomes",
     subtitle:
-      "Software engineer focused on scalable systems, fraud prevention, and AI-assisted development.",
+      "Software developer focused on large-scale distributed systems, MLOps, and engineering-driven AI.",
     summary:
-      "I currently work at Mercado Livre protecting millions of transactions through resilient microservices, observability, and data-informed decision making. My background blends strong backend foundations, full-stack execution, quality-first engineering, and practical use of AI to speed up delivery with rigor.",
+      "I work at Mercado Livre in the Fraud Prevention and MLOps domain, building high-throughput microservices, deep observability setups, and infrastructure for ML models. I combine a strong backend foundation (Java, Kotlin, Go, Python) with intensive daily use of AI on two fronts: accelerating developer experience (DevEx across Claude, OpenAI, and Google ecosystems) and running production Machine Learning workloads.",
     primaryCta: "Send email",
     secondaryCta: "Open LinkedIn",
     cvCta: "Download CV",
     badgeTitle: "Current work",
-    badgeBody: "Fraud prevention at Mercado Livre with a focus on performance, security, and continuous evolution.",
+    badgeBody: "MLOps & Fraud Prevention at Mercado Livre, integrating scalable services and AI.",
     photoAlt: "Profile photo of Ronaldy Gomes"
   },
   metrics: [
     {
       label: "Experience",
-      value: "3+ years in software engineering"
+      value: "3+ years building software"
     },
     {
-      label: "Location",
-      value: "Sao Paulo, Brazil"
+      label: "Current focus",
+      value: "MLOps, Scale & AI-powered DevEx"
     },
     {
-      label: "Specialty",
-      value: "Java, Kotlin, Go, AWS, and observability"
+      label: "Core stack",
+      value: "Java, Kotlin, Go, Python, AWS & AI"
     }
   ],
   spotlight: {
     overview: {
       eyebrow: "Overview",
-      title: "Engineering with real impact at Latin American scale.",
+      title: "Solid engineering at real scale with practical AI.",
       body:
-        "My work combines architecture, resilience, security, and AI acceleration to deliver reliable software in high-volume environments."
+        "My work brings together distributed systems architecture, production observability, and MLOps infrastructure to support high-availability real-time decision making."
     },
     contacts: {
       eyebrow: "Contact",
@@ -51,74 +51,74 @@ export const contentEn = {
   },
   highlights: {
     eyebrow: "Highlights",
-    title: "What defines my profile",
+    title: "How I approach engineering",
     items: [
       {
         icon: "⚡",
-        title: "Scalability with ownership",
-        body: "Building and maintaining secure, resilient microservices designed for high-throughput environments."
+        title: "Scale & Reliability",
+        body: "Building and maintaining services designed for heavy traffic, low latency, and continuous high availability at Mercado Livre."
       },
       {
         icon: "🤖",
-        title: "AI as leverage",
-        body: "Using Cursor, Windsurf, GitHub Copilot, and OpenAI Codex to automate workflows and raise productivity."
+        title: "AI in DevEx (Claude, OpenAI, Google)",
+        body: "Leveraging cutting-edge AI ecosystems to accelerate engineering velocity, test automation, and code generation."
       },
       {
-        icon: "🛡️",
-        title: "Quality from the ground up",
-        body: "Strong attention to unit, integration, and end-to-end testing, clean code, and sustainable architecture."
+        icon: "🧠",
+        title: "MLOps & Python for ML",
+        body: "Operationalizing model lifecycles, data/inference pipelines, and core software engineering best practices for Machine Learning."
       },
       {
-        icon: "🤝",
-        title: "Collaborative execution",
-        body: "Working closely with product, QA, and stakeholders to turn business rules into reliable software."
+        icon: "📊",
+        title: "Deep Observability",
+        body: "Proactive telemetry tracking, distributed tracing, and P99 latency monitoring for robust operations and incident prevention."
       }
     ]
   },
   experience: {
     eyebrow: "Experience",
-    title: "Career path"
+    title: "Career journey"
   },
   stack: {
     eyebrow: "Stack",
-    title: "Technologies and tooling",
+    title: "Technologies and tools",
     intro:
-      "My work spans backend, frontend, mobile, cloud, and observability. I have deeper expertise in Java/Kotlin, AWS, and distributed systems."
+      "Hands-on experience in distributed backends, cloud architecture, and observability, with an active focus expanding into MLOps, Python for data, and AI ecosystems."
   },
   education: {
     eyebrow: "Education",
-    title: "Academic foundation"
+    title: "Academic background"
   },
   certs: {
-    eyebrow: "Certificates",
+    eyebrow: "Certifications",
     title: "Continuous learning"
   },
   skills: {
-    eyebrow: "Strengths",
-    title: "Core skills"
+    eyebrow: "Skills",
+    title: "Key strengths"
   },
   personal: {
     eyebrow: "Beyond work",
     title: "Personal interests",
     body:
-      "Outside software, I am a saxophonist with 10 years of experience and a motorsport enthusiast. Creativity, rhythm, and precision also shape how I build products."
+      "I am 25 years old, a saxophonist of 10 years, and a motorsport enthusiast. Rhythm, technical precision, and sharp attention to detail are principles I carry directly from music into software engineering."
   },
   jobs: [
     {
       company: "Mercado Livre",
-      role: "Software Developer",
+      role: "Software Developer (Fraud Prevention & MLOps)",
       period: "Dec 2024 - Present",
-      location: "Sao Paulo, Brazil",
+      location: "São Paulo, Brazil",
       logo: logoMap.mercadolivre.src,
       logoBg: logoMap.mercadolivre.bg,
       fallback: "ML",
-      summary: "Fraud prevention in an ecosystem with millions of transactions and strong availability requirements.",
+      summary: "Working across Fraud Prevention and MLOps, maintaining high-volume services and accelerating engineering with AI.",
       bullets: [
-        "Built high-performance microservices for fraud prevention scenarios.",
-        "Delivered strategic integrations across the MELI ecosystem.",
-        "Used observability data to optimize flows and increase availability.",
-        "Applied AI to speed up development and support detection workflows.",
-        "Kept a strong focus on testing, clean code, and evolvable architecture."
+        "Developing and maintaining high-concurrency microservices in Java, Kotlin, and Go.",
+        "Engineering within MLOps: supporting infrastructure, data pipelines, and the lifecycle of Machine Learning models with Python for fraud detection.",
+        "Accelerating Developer Experience (DevEx) by actively utilizing Claude (Anthropic), OpenAI, and Google ecosystems for velocity, testing, and automation.",
+        "Deep observability with real-time health monitoring, P99 latency tracking, and high-availability assurance for critical pipelines.",
+        "Quality-first mindset with rigorous automated testing, clean code principles, and evolvable architecture."
       ]
     },
     {
@@ -129,70 +129,67 @@ export const contentEn = {
       logo: logoMap.soc.src,
       logoBg: logoMap.soc.bg,
       fallback: "SOC",
-      summary: "Full-stack execution across product demands, integrations, frontend, APIs, and continuous improvement.",
+      summary: "Full stack engineering focused on enterprise integrations, APIs, frontend, and mobile solutions.",
       bullets: [
-        "Built frontend features for product-driven requests.",
-        "Implemented and maintained REST, SOAP, and WebServices APIs.",
-        "Produced technical and functional documentation.",
-        "Applied agile practices, SOLID principles, design patterns, and unit testing.",
-        "Contributed to mobile demands using Kotlin and Swift in a WebView approach."
+        "Developed and maintained REST, SOAP, and WebService APIs for core enterprise products with high demand.",
+        "Delivered frontend interfaces tailored to product specifications with strong usability and performance focus.",
+        "Applied software engineering best practices: SOLID, Design Patterns, and thorough unit test coverage.",
+        "Supported hybrid mobile solutions using Kotlin and Swift in a WebView architecture."
       ]
     },
     {
       company: "mazzatech",
       role: "IT Applications Analyst",
       period: "Apr 2022 - Oct 2022",
-      location: "Sao Paulo, Brazil",
+      location: "São Paulo, Brazil",
       logo: logoMap.mazzatech.src,
       logoBg: logoMap.mazzatech.bg,
       fallback: "MZ",
-      summary: "Integrations, software mapping, documentation, and operational efficiency in a regional context.",
+      summary: "Integrations, technical documentation, and operational efficiency across regional systems.",
       bullets: [
-        "Handled requirements gathering and software mapping across South America.",
-        "Designed integrations between local and web applications.",
-        "Created technical and cybersecurity documentation.",
-        "Supported users, internal automations, and usability improvements."
+        "Mapped technical requirements and integrations across enterprise applications throughout South America.",
+        "Authored technical specs, operational workflows, and cybersecurity baseline requirements.",
+        "Provided user support and built task automations to drive operational efficiency."
       ]
     },
     {
       company: "Zurich Santander Insurance America",
-      role: "Systems Support Intern",
+      role: "Systems Operations Intern",
       period: "Jun 2021 - Mar 2022",
-      location: "Sao Paulo, Brazil",
+      location: "São Paulo, Brazil",
       logo: logoMap.zurich.src,
       logoBg: logoMap.zurich.bg,
       fallback: "ZI",
-      summary: "System support, monitoring, and operational reliability work.",
+      summary: "System support, production monitoring, and operational reliability.",
       bullets: [
-        "Monitored system performance and investigated root causes for incidents.",
-        "Supported internal users and configured software and systems.",
-        "Maintained technical documentation.",
-        "Collaborated on system improvements and IT fiscal routines."
+        "Monitored production performance and conducted root cause analysis (RCA) on operational incidents.",
+        "Provided support for internal business systems and maintained operational runbooks.",
+        "Assisted in fiscal compliance routines and automated internal data workflows."
       ]
     }
   ],
   stackGroups: [
     {
-      title: "Backend",
-      items: ["Java", "Kotlin", "Go", "Spring Boot", "Spring Security", "Spring Data", "Node.js"]
+      title: "Backend & Languages",
+      items: ["Java", "Kotlin", "Go", "Python", "Spring Boot", "Node.js"]
     },
     {
-      title: "Frontend",
-      items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"]
+      title: "MLOps & Cloud",
+      items: ["AWS", "MLOps", "Python", "Lambda", "DynamoDB", "CloudWatch", "BigQuery", "Docker", "SQS", "SNS"]
     },
     {
-      title: "Cloud & Data",
-      items: ["AWS", "EC2", "S3", "Lambda", "CloudWatch", "DynamoDB", "API Gateway", "SNS", "SQS", "SES", "BigQuery"]
+      title: "AI & Developer Experience",
+      items: ["Claude / Anthropic", "OpenAI", "Google AI / Gemini", "DevEx", "Test Automation", "Prompt Engineering"]
     },
     {
-      title: "Quality & Tools",
-      items: ["Jest", "GitHub", "GitLab", "ElasticSearch", "MongoDB", "MySQL"]
+      title: "Frontend & Quality",
+      items: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Jest", "Git", "ElasticSearch", "MongoDB", "MySQL"]
     }
   ],
   schools: [
     {
-      name: "Federal University of ABC",
-      course: "Bachelor's degree in Science and Technology / Computer Science",
+      name: "Universidade Federal do ABC",
+      course: "B.S. in Science & Technology / Computer Science",
       period: "2019 - 2025",
       logo: logoMap.ufabc.src,
       logoBg: logoMap.ufabc.bg,
@@ -207,8 +204,8 @@ export const contentEn = {
       fallback: "FI"
     },
     {
-      name: "ETEC - Technical State School of Sao Paulo",
-      course: "Technical degree in Mechanics",
+      name: "ETEC - Escola Técnica Estadual de São Paulo",
+      course: "Mechanical Technician",
       period: "2017 - 2018",
       logo: logoMap.etec.src,
       logoBg: logoMap.etec.bg,
@@ -219,8 +216,15 @@ export const contentEn = {
     "Java Certification Track",
     "AWS Educate Introduction to Generative AI",
     "Claude Code in Action",
-    "Finance Fundamentals - FGV",
-    "Dart: variables and lists"
+    "Financial Fundamentals - FGV",
+    "Dart: Data Structures and Language Foundations"
   ],
-  skillsList: ["Claude Skills", "Scalability and observability", "Google BigQuery", "Communication", "Teamwork", "Adaptability"]
+  skillsList: [
+    "MLOps & Machine Learning Pipelines",
+    "Fraud Prevention & High Scale",
+    "Distributed Systems (Java, Go, Kotlin)",
+    "AI for DevEx (Claude, OpenAI, Google)",
+    "Observability & P99 Latency",
+    "Incident Resolution & RCA"
+  ]
 };

@@ -1,24 +1,24 @@
-# Documentação do Projeto: Personal Website & Portfolio
+# Documentação Técnica de Engenharia: Personal Website & Portfolio
 
-## 1. Visão Geral
+## 1. Visão Geral do Projeto
 
-Este projeto é uma **Landing Page / Portfólio Profissional** de **Ronaldy Gomes** (Engenheiro de Software com foco em sistemas escaláveis, prevenção a fraudes, computação em nuvem AWS e inteligência artificial aplicada ao desenvolvimento).
+Este projeto é o **Portfólio Profissional** de **Ronaldy Gomes** — *Software Developer & MLOps no Mercado Livre*, atuando nos contextos de **Prevenção a Fraudes**, **MLOps**, **Sistemas Distribuídos de Alta Escala**, **Cloud AWS** e **Developer Experience (DevEx)** acelerada pelos ecossistemas **Claude (Anthropic)**, **OpenAI** e **Google (Gemini)**.
 
-O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nativamente no navegador através de padrões modernos da web (ES Modules, Import Maps, React 18, HTM e Tailwind CSS).
+O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nativamente no navegador através de padrões modernos da web (ES Modules nativos, Import Maps, React 18, HTM e Tailwind CSS).
 
 ---
 
 ## 2. Arquitetura e Decisões Técnicas
 
-```
+```text
 +-------------------------------------------------------------------------+
 |                               Browser                                   |
 |                                                                         |
 |   +-----------------------------------------------------------------+   |
 |   |                          index.html                             |   |
-|   |  - Tailwind CSS (Play CDN com extensão de tema)                 |   |
+|   |  - Tailwind CSS (Play CDN com extensão de tema e cores)         |   |
 |   |  - Import Maps (ESM: react@18.3.1, react-dom@18.3.1, htm@3.1.1)  |   |
-|   |  - Schema.org (JSON-LD), Meta SEO, OpenGraph, Scroll Styles     |   |
+|   |  - Schema.org (JSON-LD), PWA Manifest, SEO Canônico, OpenGraph  |   |
 |   +-----------------------------------------------------------------+   |
 |                                   │                                     |
 |                                   ▼ (ESM Module Load)                   |
@@ -32,28 +32,32 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
 |   |    src/data/     |     |  src/components/   |   |  src/config/  |   |
 |   | - content.pt.js  |     | - Header.js        |   | - logos.js    |   |
 |   | - content.en.js  |     | - Hero.js          |   +---------------+   |
-|   | - navigation.js  |     | - Experience.js    |            │          |
-|   +------------------+     | - Stack.js         |            ▼          |
-|                            | - Education.js     |   +---------------+   |
-|                            | - Contact.js       |   |    assets/    |   |
-|                            | - ui/ (TechPill,   |   | - profile.webp|   |
-|                            |   LogoBadge, etc.) |   | - logos/      |   |
-|                            +--------------------+   +---------------+   |
+|   | - navigation.js  |     | - Metrics.js       |            │          |
+|   +------------------+     | - Spotlight.js     |            ▼          |
+|                            | - Highlights.js    |   +---------------+   |
+|                            | - Experience.js    |   |    assets/    |   |
+|                            | - Stack.js         |   | - profile.webp|   |
+|                            | - Education.js     |   | - favicon.svg |   |
+|                            | - Contact.js       |   | - logos/tech/ |   |
+|                            | - ui/ (TechPill,   |   +---------------+   |
+|                            |   ScrollProgress,  |                       |
+|                            |   BackToTop, etc.) |                       |
+|                            +--------------------+                       |
 +-------------------------------------------------------------------------+
 ```
 
 ### 2.1. Pilares de Engenharia
-- **Arquitetura Modular em `src/`**: Código desacoplado em componentes, dados de tradução e configurações com carregamento nativo via ES Modules.
-- **ES Modules & Import Maps**: Mapeamento nativo dos pacotes via `<script type="importmap">` usando `esm.sh`. Dispensa ferramentas como Webpack, Rollup, Vite ou Babel.
-- **React 18 & HTM (Hyperscript Tagged Markup)**: Provê reatividade, hooks (`useState`, `useEffect`, `useMemo`) e sintaxe declarativa limpa.
-- **Tailwind CSS CDN**: Estilização atômica, suporte a dark mode (`dark:`), fontes customizadas (`Lora`) e layout responsivo.
-- **Offline-First Assets**: Todos os logos de empresas, tecnologias e imagem de perfil são servidos localmente, eliminando latência externa e riscos de rate-limiting.
+* **Arquitetura Modular em `src/`**: Código desacoplado em componentes, dados de tradução e configurações com carregamento nativo via ES Modules.
+* **ES Modules & Import Maps**: Mapeamento nativo dos pacotes via `<script type="importmap">` usando `esm.sh`. Dispensa ferramentas como Webpack, Rollup, Vite ou Babel em desenvolvimento.
+* **React 18 & HTM (Hyperscript Tagged Markup)**: Provê reatividade, hooks (`useState`, `useEffect`, `useMemo`) e sintaxe declarativa limpa sem JSX transpilado.
+* **Tailwind CSS**: Estilização atômica, suporte a dark mode (`dark:`), fontes customizadas (`Lora`) e layout responsivo elástico.
+* **Offline-First Assets**: Todos os logos de empresas, tecnologias e imagem de perfil são servidos localmente, eliminando latência externa e riscos de rate-limiting.
 
 ---
 
-## 3. Registro de Mudanças Recentes (Changelog)
+## 3. Registro de Mudanças (Changelog Histórico)
 
-### ✅ Melhorias Concluídas:
+### ✅ Entregas Concluídas:
 1. **Refatoração Arquitetural Modular (`src/`):**
    * Quebra do monólito `app.js` em módulos especializados: `src/data/` (i18n), `src/config/` (logos), `src/components/` (seções) e `src/components/ui/` (componentes reutilizáveis).
 2. **Botão de Download de CV em PDF:**
@@ -74,7 +78,7 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
    * Atualização de idade (25 anos) e alinhamento de escopo para **MLOps** e **Fraud Prevention** no Mercado Livre.
    * Destaque para atuação em **Developer Experience (DevEx)** utilizando ecossistemas Claude (Anthropic), OpenAI e Google (Gemini).
 10. **Novos Ícones Oficiais em SVG:**
-   * Adição e mapeamento de ícones oficiais de alta fidelidade para Python, Docker, Claude, OpenAI, Gemini, Git, MLOps, DevEx, Test Automation e Prompt Engineering.
+   * Adição e mapeamento de ícones oficiais de alta fidelidade em cores para Python, Docker, Claude, OpenAI, Gemini, Git (losango oficial), MLOps, DevEx, Test Automation, Prompt Engineering, PyTorch, FastAPI, PostgreSQL e Blender.
 11. **Projeto Pessoal SnapBrick AI:**
    * Substituição da seção de certificações pelo card estruturado do projeto de Visão Computacional SnapBrick AI, com badge de status em desenvolvimento, layout centralizado e tech stack completa (PyTorch, YOLOv11, FastAPI, BlenderProc, React Native, PostgreSQL).
 12. **Barra de Progresso de Leitura (ScrollProgress):**
@@ -91,76 +95,75 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
 
 ---
 
-## 4. Estrutura de Diretórios
+## 4. Estrutura de Diretórios Completa
 
-```
+```text
 personal-website/
-├── .gitignore          # Regras de exclusão do Git
-├── index.html          # Ponto de entrada HTML, importmaps, Tailwind CDN e meta tags
-├── assets/             # Recursos estáticos 100% locais
-│   ├── profile.webp    # Foto de perfil otimizada (WebP ~29KB)
-│   ├── cv-ronaldy-gomes.pdf # Currículo para download direto
-│   └── logos/          # Vetores e imagens locais
+├── README.md               # Apresentação principal do repositório no GitHub
+├── index.html              # Ponto de entrada HTML, importmaps, Tailwind CDN e meta tags
+├── manifest.json           # Manifesto Web App (PWA)
+├── package.json            # Scripts de desenvolvimento e metadados
+├── assets/                 # Recursos estáticos 100% locais
+│   ├── favicon.svg         # Favicon vetorial oficial RG
+│   ├── profile.webp        # Foto de perfil otimizada (WebP ~29KB)
+│   ├── cv-ronaldy-gomes.pdf# Currículo para download direto
+│   └── logos/              # Vetores e imagens locais
 │       ├── *.svg / *.png / *.jpg
-│       └── tech/       # SVGs das tecnologias (Java, Spring, AWS, React, etc.)
-├── src/                # Código-fonte modular da aplicação
-│   ├── app.js          # Ponto de entrada e estado raiz
+│       └── tech/           # SVGs das tecnologias (Python, Docker, PyTorch, etc.)
+├── src/                    # Código-fonte modular da aplicação
+│   ├── app.js              # Ponto de entrada e estado raiz
 │   ├── config/
-│   │   └── logos.js    # Mapeamento de logos e ícones
+│   │   └── logos.js        # Mapeamento de logos e ícones
 │   ├── data/
 │   │   ├── content.pt.js   # Conteúdo em Português
 │   │   ├── content.en.js   # Conteúdo em Inglês
 │   │   └── navigation.js   # Links de navegação
 │   └── components/
-│       ├── Header.js
-│       ├── Hero.js
-│       ├── Metrics.js
-│       ├── Spotlight.js
-│       ├── Highlights.js
-│       ├── Experience.js
-│       ├── Stack.js
-│       ├── Education.js
-│       ├── Contact.js
+│       ├── Header.js, Hero.js, Metrics.js, Spotlight.js,
+│       ├── Highlights.js, Experience.js, Stack.js, Education.js, Contact.js
 │       └── ui/
-│           ├── LogoBadge.js
-│           ├── TechPill.js
-│           ├── ContactIcon.js
-│           └── ToggleGroup.js
-└── docs/               # Documentação técnica de engenharia
-    └── README.md       # Esta documentação
+│           ├── ScrollProgress.js  # Barra de leitura no topo
+│           ├── BackToTop.js       # Botão flutuante voltar ao topo
+│           ├── TechPill.js        # Pílula com ícone oficial da tecnologia
+│           ├── LogoBadge.js       # Badge de empresas e faculdades
+│           ├── ContactIcon.js     # Ícones dos canais de contato
+│           └── ToggleGroup.js     # Controles de tema e idioma
+└── docs/
+    └── README.md           # Esta documentação técnica detalhada
 ```
 
 ---
 
 ## 5. Como Executar o Projeto
 
-Como o projeto não utiliza etapas de compilação ou empacotamento, basta servi-lo através de qualquer servidor HTTP estático:
-
 ```bash
-# Opção 1: Python 3
-python3 -m http.server 3000
+# Opção 1: NPM Scripts
+npm run dev
 
-# Opção 2: Node.js (npx serve)
+# Opção 2: Python 3
+python3 -m http.server 3333
+
+# Opção 3: Node.js (npx serve)
 npx serve .
 ```
-Acesse `http://localhost:3000` no seu navegador.
+
+Acesse **`http://localhost:3333`** no seu navegador.
 
 ---
 
-## 6. Roadmap de Próximas Evoluções
+## 6. Próximos Passos de Evolução
 
 | Prioridade | Ação / Melhoria | Impacto Técnico & Negócio | Esforço | Detalhes da Implementação |
 | :--- | :--- | :--- | :---: | :--- |
-| 🟢 **Baixa** | **Favicons Multi-dispositivo & Web App Manifest** | **Experiência Mobile/PWA** | ~10 min | Gerar ícone Apple Touch, `favicon.ico` e arquivo `manifest.json` para permitir salvar o portfólio como atalho na tela inicial do celular. |
-| 🟢 **Baixa** | **Barra de Progresso de Scroll no Topo** | **Polimento Visual / UI** | ~5 min | Linha gradiente no topo que indica a porcentagem de leitura da página. |
-| 🟢 **Baixa** | **Botão Voltar ao Topo Flutuante** | **Usabilidade Mobile** | ~5 min | Botão sutil com seta que aparece ao rolar mais de 40% da página. |
-| 🟢 **Baixa** | **Compilação Estática do Tailwind CSS** | **Performance máxima** | ~15 min | Substituir a engine em runtime do CDN (~3MB) por um arquivo `dist/styles.css` minificado (~12 KB) para eliminar bloqueios de renderização (*FCP*). |
+| 🟢 **Baixa** | **Deploy Automatizado via GitHub Actions** | **CI/CD & DevOps** | ~10 min | Workflow de CI/CD para deploy automático na branch `gh-pages` ou Vercel ao commitar na `main`. |
+| 🟢 **Baixa** | **Compilação Estática do Tailwind CSS** | **Performance máxima** | ~10 min | Gerar `dist/styles.css` minificado (~12 KB) para eliminar o engine de compilação runtime do CDN em produção. |
+| 🟢 **Média** | **Página/Modal Dedicado do SnapBrick AI** | **Portfólio / ML Showcase** | ~30 min | Demonstração interativa do pipeline de inferência com fotos de teste e catálogo de peças. |
 
 ---
 
-## 7. Guia de Continuidade de Contexto para Sessões e Agentes
+## 7. Guia de Continuidade de Contexto para Agentes de IA
 
-Para retomar o desenvolvimento deste projeto em uma nova sessão do assistente de IA ou por outros engenheiros:
-1. **Arquivo Fonte de Verdade:** Este arquivo ([`docs/README.md`](file:///Users/ronaldycgomes/Desktop/projects/personal-website/docs/README.md)) serve como documentação viva e ponto de partida para qualquer análise.
+Para retomar o desenvolvimento deste projeto em uma nova sessão:
+1. **Arquivo Fonte de Verdade:** Este arquivo ([`docs/README.md`](file:///Users/ronaldycgomes/Desktop/projects/personal-website/docs/README.md)) e o [`README.md`](file:///Users/ronaldycgomes/Desktop/projects/personal-website/README.md) servem como documentação viva.
 2. **Instrução de Continuidade:** Em uma nova sessão, utilize o prompt:
-   > *"Leia o arquivo `docs/README.md` e dê continuidade na implementação do item [Nome do Item] da tabela de Roadmap."*
+   > *"Leia o arquivo `docs/README.md` e dê continuidade na implementação do item [Nome do Item] da tabela de Próximos Passos."*

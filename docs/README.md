@@ -92,6 +92,10 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
    * Monograma RG com gradiente de marca e suporte nativo a todas as resoluções e telas Retina.
 16. **SEO Canônico & Dados Estruturados Enriquecidos:**
    * Tag canônica (`link rel="canonical"`) e expansão do Schema.org com entidades de MLOps, DevEx e Machine Learning Pipelines.
+17. **Indexação Avançada (`robots.txt` & `sitemap.xml`):**
+   * Configuração de rastreamento com sitemap multilíngue para Google Search Console e Bing Webmaster Tools.
+18. **Otimização de LCP & Hints de Performance:**
+   * Preload da foto de perfil, atributos `fetchpriority="high"` e `decoding="async"`, e `preconnect` para CDN de módulos ESM (`esm.sh`).
 
 ---
 

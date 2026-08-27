@@ -38,8 +38,8 @@ export function Header({ locale, lang, setLang, themePreference, setThemePrefere
           <${ToggleGroup}
             label=${lang === "pt" ? "Selecionar idioma" : "Select language"}
             options=${[
-              { label: "PT", value: "pt", ariaLabel: "Português" },
-              { label: "EN", value: "en", ariaLabel: "English" }
+              { label: "\uD83C\uDDE7\uD83C\uDDF7 PT", value: "pt", ariaLabel: "Português" },
+              { label: "\uD83C\uDDFA\uD83C\uDDF8 EN", value: "en", ariaLabel: "English" }
             ]}
             value=${lang}
             onChange=${setLang}

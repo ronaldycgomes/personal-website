@@ -2,18 +2,18 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import htm from "htm";
 
-import { contentPt } from "./data/content.pt.js";
-import { contentEn } from "./data/content.en.js";
+import { contentPt } from "./data/content.pt.js?v=12";
+import { contentEn } from "./data/content.en.js?v=12";
 
-import { Header } from "./components/Header.js";
-import { Hero } from "./components/Hero.js";
-import { Metrics } from "./components/Metrics.js";
-import { Spotlight } from "./components/Spotlight.js";
-import { Highlights } from "./components/Highlights.js";
-import { Experience } from "./components/Experience.js";
-import { Stack } from "./components/Stack.js";
-import { Education } from "./components/Education.js";
-import { Contact } from "./components/Contact.js";
+import { Header } from "./components/Header.js?v=12";
+import { Hero } from "./components/Hero.js?v=12";
+import { Metrics } from "./components/Metrics.js?v=12";
+import { Spotlight } from "./components/Spotlight.js?v=12";
+import { Highlights } from "./components/Highlights.js?v=12";
+import { Experience } from "./components/Experience.js?v=12";
+import { Stack } from "./components/Stack.js?v=12";
+import { Education } from "./components/Education.js?v=12";
+import { Contact } from "./components/Contact.js?v=12";
 
 const html = htm.bind(React.createElement);
 

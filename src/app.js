@@ -2,20 +2,20 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import htm from "htm";
 
-import { contentPt } from "./data/content.pt.js?v=27";
-import { contentEn } from "./data/content.en.js?v=27";
+import { contentPt } from "./data/content.pt.js?v=28";
+import { contentEn } from "./data/content.en.js?v=28";
 
-import { Header } from "./components/Header.js?v=27";
-import { Hero } from "./components/Hero.js?v=27";
-import { Metrics } from "./components/Metrics.js?v=27";
-import { Spotlight } from "./components/Spotlight.js?v=27";
-import { Highlights } from "./components/Highlights.js?v=27";
-import { Experience } from "./components/Experience.js?v=27";
-import { Stack } from "./components/Stack.js?v=27";
-import { Education } from "./components/Education.js?v=27";
-import { Contact } from "./components/Contact.js?v=27";
-import { ScrollProgress } from "./components/ui/ScrollProgress.js?v=27";
-import { BackToTop } from "./components/ui/BackToTop.js?v=27";
+import { Header } from "./components/Header.js?v=28";
+import { Hero } from "./components/Hero.js?v=28";
+import { Metrics } from "./components/Metrics.js?v=28";
+import { Spotlight } from "./components/Spotlight.js?v=28";
+import { Highlights } from "./components/Highlights.js?v=28";
+import { Experience } from "./components/Experience.js?v=28";
+import { Stack } from "./components/Stack.js?v=28";
+import { Education } from "./components/Education.js?v=28";
+import { Contact } from "./components/Contact.js?v=28";
+import { ScrollProgress } from "./components/ui/ScrollProgress.js?v=28";
+import { BackToTop } from "./components/ui/BackToTop.js?v=28";
 
 const html = htm.bind(React.createElement);
 
@@ -116,7 +116,7 @@ function App() {
 
   return html`
     <div
-      className=${`min-h-screen overflow-x-hidden ${
+      className=${`min-h-screen ${
         theme === "dark" ? "bg-hero-dark text-slate-100" : "bg-hero-light text-slate-900"
       }`}
     >

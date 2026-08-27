@@ -11,7 +11,16 @@
       name="description"
       content="Landing page pessoal de Ronaldy Gomes, Software Developer & MLOps no Mercado Livre com foco em sistemas escaláveis, prevenção a fraudes, cloud e IA aplicada."
     />
+    <meta name="author" content="Ronaldy Gomes" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://ronaldycgomes.github.io/personal-website/" />
+
+    <!-- Performance Preconnections & Resource Hints -->
+    <link rel="preconnect" href="https://esm.sh" crossorigin />
+    <link rel="dns-prefetch" href="https://esm.sh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="./assets/profile.webp" type="image/webp" />
 
     <!-- Favicon & Touch Icons -->
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
@@ -22,6 +31,10 @@
 
     <!-- Open Graph / Twitter Card -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ronaldy Gomes Portfolio" />
+    <meta property="og:url" content="https://ronaldycgomes.github.io/personal-website/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:title" content="Ronaldy Gomes | Software Developer & MLOps" />
     <meta property="og:description" content="Software developer focused on scalable systems, fraud prevention, MLOps, and engineering-driven AI." />
     <meta property="og:image" content="https://github.com/ronaldycgomes.png" />
@@ -35,6 +48,9 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://ronaldycgomes.github.io/personal-website/#person",
+        "url": "https://ronaldycgomes.github.io/personal-website/",
+        "mainEntityOfPage": "https://ronaldycgomes.github.io/personal-website/",
         "name": "Ronaldy Gomes",
         "jobTitle": "Software Developer & MLOps",
         "worksFor": {
@@ -180,7 +196,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./src/app.js?v=27"></script>
+    <script type="module" src="./src/app.js?v=28"></script>
   </body>
 </html>
 

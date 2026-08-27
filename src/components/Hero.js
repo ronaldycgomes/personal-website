@@ -52,6 +52,8 @@ export function Hero({ locale }) {
             className="min-h-[300px] w-full rounded-[20px] object-cover [object-position:center_top] sm:min-h-[432px] sm:rounded-[22px]"
             src=${profilePhoto}
             alt=${locale.hero.photoAlt}
+            fetchpriority="high"
+            decoding="async"
           />
           <div className="absolute bottom-3 right-3 max-w-[170px] rounded-[18px] bg-slate-900/80 px-3 py-2.5 text-slate-50 shadow-2xl sm:bottom-5 sm:right-5 sm:max-w-[220px] sm:rounded-[20px] sm:px-4 sm:py-3">
             <strong>${locale.hero.badgeTitle}</strong>

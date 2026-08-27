@@ -6,7 +6,7 @@ const profilePhoto = "./assets/profile.webp";
 
 export function Hero({ locale }) {
   return html`
-    <section className="grid gap-6 py-7 lg:grid-cols-[minmax(0,1.08fr)_minmax(340px,0.92fr)]" id="hero">
+    <section className="grid gap-6 py-7 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]" id="hero">
       <article data-reveal="" className="order-1 relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white/80 p-5 shadow-soft backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/70 dark:shadow-deep sm:rounded-[32px] sm:p-7 lg:order-1">
         <div className="pointer-events-none absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-orange-200/60 blur-2xl dark:bg-[#ff9464]/10"></div>
         <p className="mb-3 text-[0.78rem] uppercase tracking-[0.18em] text-orange-500">${locale.hero.eyebrow}</p>
@@ -22,12 +22,25 @@ export function Hero({ locale }) {
             ${locale.hero.primaryCta}
           </a>
           <a
-            className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-slate-200/90 bg-white px-5 text-center font-bold no-underline shadow-sm dark:border-white/10 dark:bg-white/5 sm:w-auto"
+            className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-slate-200/90 bg-white px-5 text-center font-bold no-underline shadow-sm transition hover:border-slate-300 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10 sm:w-auto"
             href="https://www.linkedin.com/in/ronaldy-gomes"
             target="_blank"
             rel="noopener noreferrer"
           >
             ${locale.hero.secondaryCta}
+          </a>
+          <a
+            className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-slate-200/90 bg-white px-5 text-center font-bold no-underline shadow-sm transition hover:border-slate-300 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10 sm:w-auto"
+            href="./assets/cv-ronaldy-gomes.pdf"
+            download="Ronaldy_Gomes_CV.pdf"
+            title="Download Curriculum Vitae (PDF)"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+            ${locale.hero.cvCta || "Baixar CV"}
           </a>
         </div>
       </article>

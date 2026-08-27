@@ -2,18 +2,20 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import htm from "htm";
 
-import { contentPt } from "./data/content.pt.js";
-import { contentEn } from "./data/content.en.js";
+import { contentPt } from "./data/content.pt.js?v=27";
+import { contentEn } from "./data/content.en.js?v=27";
 
-import { Header } from "./components/Header.js";
-import { Hero } from "./components/Hero.js";
-import { Metrics } from "./components/Metrics.js";
-import { Spotlight } from "./components/Spotlight.js";
-import { Highlights } from "./components/Highlights.js";
-import { Experience } from "./components/Experience.js";
-import { Stack } from "./components/Stack.js";
-import { Education } from "./components/Education.js";
-import { Contact } from "./components/Contact.js";
+import { Header } from "./components/Header.js?v=27";
+import { Hero } from "./components/Hero.js?v=27";
+import { Metrics } from "./components/Metrics.js?v=27";
+import { Spotlight } from "./components/Spotlight.js?v=27";
+import { Highlights } from "./components/Highlights.js?v=27";
+import { Experience } from "./components/Experience.js?v=27";
+import { Stack } from "./components/Stack.js?v=27";
+import { Education } from "./components/Education.js?v=27";
+import { Contact } from "./components/Contact.js?v=27";
+import { ScrollProgress } from "./components/ui/ScrollProgress.js?v=27";
+import { BackToTop } from "./components/ui/BackToTop.js?v=27";
 
 const html = htm.bind(React.createElement);
 
@@ -114,11 +116,13 @@ function App() {
 
   return html`
     <div
-      className=${`min-h-screen ${
+      className=${`min-h-screen overflow-x-hidden ${
         theme === "dark" ? "bg-hero-dark text-slate-100" : "bg-hero-light text-slate-900"
       }`}
     >
-      <div className="mx-auto w-[min(1200px,calc(100%-32px))] py-6 pb-18 max-sm:w-[min(100%-20px,1200px)] max-sm:pt-4">
+      <${ScrollProgress} />
+
+      <div className="mx-auto w-[min(1200px,calc(100%-32px))] py-6 pb-20 max-sm:w-[min(100%-20px,1200px)] max-sm:pt-4">
         <${Header}
           locale=${locale}
           lang=${lang}
@@ -139,6 +143,8 @@ function App() {
           <${Contact} contacts=${locale.spotlight.contacts} />
         </main>
       </div>
+
+      <${BackToTop} lang=${lang} />
     </div>
   `;
 }

@@ -1,0 +1,19 @@
+{
+  "name": "Ronaldy Gomes - Software Developer & MLOps",
+  "short_name": "Ronaldy Gomes",
+  "description": "Portfólio de Ronaldy Gomes - Engenharia de Software, Prevenção a Fraudes, MLOps, Cloud e IA.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b1120",
+  "theme_color": "#0b1120",
+  "icons": [
+    {
+      "src": "./assets/profile.webp",
+      "sizes": "192x192 512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

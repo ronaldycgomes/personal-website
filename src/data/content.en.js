@@ -11,6 +11,7 @@ export const contentEn = {
       "I currently work at Mercado Livre protecting millions of transactions through resilient microservices, observability, and data-informed decision making. My background blends strong backend foundations, full-stack execution, quality-first engineering, and practical use of AI to speed up delivery with rigor.",
     primaryCta: "Send email",
     secondaryCta: "Open LinkedIn",
+    cvCta: "Download CV",
     badgeTitle: "Current work",
     badgeBody: "Fraud prevention at Mercado Livre with a focus on performance, security, and continuous evolution.",
     photoAlt: "Profile photo of Ronaldy Gomes"

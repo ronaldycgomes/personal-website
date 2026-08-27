@@ -22,12 +22,25 @@ export function Hero({ locale }) {
             ${locale.hero.primaryCta}
           </a>
           <a
-            className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-slate-200/90 bg-white px-5 text-center font-bold no-underline shadow-sm dark:border-white/10 dark:bg-white/5 sm:w-auto"
+            className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-slate-200/90 bg-white px-5 text-center font-bold no-underline shadow-sm transition hover:border-slate-300 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10 sm:w-auto"
             href="https://www.linkedin.com/in/ronaldy-gomes"
             target="_blank"
             rel="noopener noreferrer"
           >
             ${locale.hero.secondaryCta}
+          </a>
+          <a
+            className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-slate-200/90 bg-white px-5 text-center font-bold no-underline shadow-sm transition hover:border-slate-300 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10 sm:w-auto"
+            href="./assets/cv-ronaldy-gomes.pdf"
+            download="Ronaldy_Gomes_CV.pdf"
+            title="Download Curriculum Vitae (PDF)"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+            ${locale.hero.cvCta || "Baixar CV"}
           </a>
         </div>
       </article>

@@ -11,6 +11,7 @@ export const contentPt = {
       "Atuo no Mercado Livre protegendo milhões de transações com microsserviços resilientes, observabilidade e decisões orientadas por dados. Minha base une backend forte, visão full stack, preocupação com qualidade e uso prático de IA para acelerar entregas com responsabilidade.",
     primaryCta: "Falar por e-mail",
     secondaryCta: "Ver LinkedIn",
+    cvCta: "Baixar CV",
     badgeTitle: "Atuação atual",
     badgeBody: "Prevenção a fraudes no Mercado Livre, com foco em performance, segurança e evolução contínua.",
     photoAlt: "Foto de perfil de Ronaldy Gomes"

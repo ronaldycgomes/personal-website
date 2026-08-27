@@ -7,6 +7,7 @@
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Architecture: No--Build SPA](https://img.shields.io/badge/Architecture-No--Build%20ESM-success?style=flat-square)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+[![PWA Ready](https://img.shields.io/badge/PWA-Ready-purple.svg?style=flat-square)](manifest.json)
 
 **Software Developer · Fraud Prevention · MLOps · Cloud · AI**  
 *Sistemas distribuídos em larga escala, pipelines de Machine Learning e Developer Experience acelerada por IA.*
@@ -21,18 +22,29 @@
 
 Este repositório contém o código-fonte do portfólio profissional de **Ronaldy Gomes**. Desenvolvido com foco em **performance extrema, design sofisticado e zero fricção de build**, adotando uma arquitetura moderna baseada em **ES Modules nativos, React 18, HTM e Tailwind CSS**.
 
-### 🎯 Principais Destaques:
-* 🌐 **Internacionalização (i18n):** Suporte completo e instantâneo a Português (PT-BR) e Inglês (EN).
-* 🌓 **Gerenciamento de Tema:** Modos *Auto* (baseado no horário local), *Light* e *Dark* com persistência no `localStorage`.
-* 📱 **PWA & Mobile-First:** Totalmente responsivo e instalável como Web App na tela inicial (iOS/Android) via `manifest.json`.
-* ⚡ **Micro-interações de UX:** Barra de progresso de leitura no topo, botão flutuante para voltar ao topo com *glassmorphism* e cópia de contatos em 1-clique com feedback visual.
-* 🤖 **Projeto em Destaque — SnapBrick AI:** Card dedicado com pipeline de Visão Computacional para catalogação e recomendação de peças LEGO com dados sintéticos no BlenderProc e YOLOv11.
+---
+
+## ✨ Funcionalidades & Engenharia Implementadas
+
+| Categoria | Funcionalidade | Descrição / Implementação |
+| :--- | :--- | :--- |
+| **Arquitetura** | **No-Build ESM SPA** | Execução nativa no navegador sem necessidade de Webpack, Vite ou Babel em desenvolvimento. |
+| **Internacionalização** | **i18n Nativo (PT / EN)** | Alternância instantânea de idioma entre Português e Inglês com persistência no `localStorage`. |
+| **Temas** | **Dark / Light / Auto** | Alternância com suporte ao horário local do sistema (18h-6h) e respeito a `prefers-color-scheme`. |
+| **Mobile & PWA** | **Instalável como App** | Suporte completo a PWA com `manifest.json`, `apple-touch-icon` e `theme-color` dinâmico. |
+| **Micro-interações UX** | **Scroll Progress & Back to Top** | Linha gradiente de 2.5px indicando leitura no topo e botão flutuante com *glassmorphism* para retorno suave. |
+| **Conversão & Contato** | **1-Click Copy & WhatsApp** | Cópia de E-mail/WhatsApp com animação de confirmação (*"Copiado!"*) e link direto de WhatsApp. |
+| **Currículo** | **Download Direto de CV** | Botão CTA no Hero integrado com download de currículo em PDF (`assets/cv-ronaldy-gomes.pdf`). |
+| **Identidade Visual** | **Ícones Oficiais em Vetor** | 100% dos ícones em SVG oficial de alta fidelidade (Python, Docker, Claude, OpenAI, Gemini, Git, PyTorch). |
+| **Projetos / ML** | **SnapBrick AI Showcase** | Card estruturado de Visão Computacional com pipeline de dados sintéticos (BlenderProc) e YOLOv11. |
+| **SEO & Semântica** | **Schema.org & Canonical** | Dados estruturados `Person` (JSON-LD) para rich snippets no Google e tag canônica anti-duplicação. |
+| **Acessibilidade** | **a11y Rigoroso** | `aria-label`, `aria-pressed`, `role="group"`, `aria-hidden` e suporte a `prefers-reduced-motion`. |
 
 ---
 
-## 🛠️ Stack & Arquitetura Técnica
+## 🛠️ Arquitetura Técnica
 
-```
+```text
 +-------------------------------------------------------------------------+
 |                               Browser                                   |
 |                                                                         |
@@ -90,6 +102,7 @@ Acesse **[http://localhost:3333](http://localhost:3333)** no seu navegador.
 
 ```text
 personal-website/
+├── README.md               # Apresentação principal do repositório no GitHub
 ├── index.html              # Ponto de entrada, importmaps, PWA, SEO Schema.org
 ├── manifest.json           # Manifesto Web App (PWA)
 ├── package.json            # Scripts de conveniência

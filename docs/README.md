@@ -82,6 +82,12 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
 13. **Botão Flutuante Voltar ao Topo (BackToTop) & Blindagem de Layout:**
    * Botão com efeito glassmorphism e rolagem suave para o topo ao passar de 350px.
    * Blindagens preventivas de responsividade: grid elástico no Hero (`minmax(0, 0.92fr)`), `overflow-x-hidden` global e dimensionamento adaptativo em dispositivos móveis.
+14. **Suporte PWA & Web App Manifest (`manifest.json`):**
+   * Manifesto PWA completo para instalação como Web App na tela inicial de smartphones (iOS/Android) com suporte a tema dark/light dinâmico (`theme-color`).
+15. **Favicon Vetorial Oficial (`assets/favicon.svg`):**
+   * Monograma RG com gradiente de marca e suporte nativo a todas as resoluções e telas Retina.
+16. **SEO Canônico & Dados Estruturados Enriquecidos:**
+   * Tag canônica (`link rel="canonical"`) e expansão do Schema.org com entidades de MLOps, DevEx e Machine Learning Pipelines.
 
 ---
 

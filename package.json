@@ -1,0 +1,21 @@
+{
+  "name": "personal-website",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Portfólio Pessoal de Ronaldy Gomes - Software Developer & MLOps",
+  "scripts": {
+    "dev": "python3 -m http.server 3333",
+    "start": "python3 -m http.server 3333",
+    "build:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "mlops",
+    "fraud-prevention",
+    "react",
+    "tailwind"
+  ],
+  "author": "Ronaldy Gomes <gomesronaldy@hotmail.com>",
+  "license": "MIT"
+}

@@ -12,7 +12,7 @@
 **Software Developer · Fraud Prevention · MLOps · Cloud · AI**  
 *Sistemas distribuídos em larga escala, pipelines de Machine Learning e Developer Experience acelerada por IA.*
 
-[🌐 Ver Demo Local](http://localhost:3333) • [📄 Ver Documentação Técnica](docs/README.md) • [💼 LinkedIn](https://www.linkedin.com/in/ronaldy-gomes)
+[🌐 Acessar Portfólio Online](https://ronaldycgomes.github.io/personal-website/) • [📄 Documentação Técnica](docs/README.md) • [💼 LinkedIn](https://www.linkedin.com/in/ronaldy-gomes)
 
 </div>
 

@@ -2,6 +2,8 @@
 
 ## 1. Visão Geral do Projeto
 
+* **URL de Produção:** [https://ronaldycgomes.github.io/personal-website/](https://ronaldycgomes.github.io/personal-website/)
+
 Este projeto é o **Portfólio Profissional** de **Ronaldy Gomes** — *Software Developer & MLOps no Mercado Livre*, atuando nos contextos de **Prevenção a Fraudes**, **MLOps**, **Sistemas Distribuídos de Alta Escala**, **Cloud AWS** e **Developer Experience (DevEx)** acelerada pelos ecossistemas **Claude (Anthropic)**, **OpenAI** e **Google (Gemini)**.
 
 O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nativamente no navegador através de padrões modernos da web (ES Modules nativos, Import Maps, React 18, HTM e Tailwind CSS).

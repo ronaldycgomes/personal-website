@@ -75,6 +75,8 @@ O projeto adota uma **Arquitetura No-Build (Zero-Bundler SPA)**, executando nati
    * Destaque para atuação em **Developer Experience (DevEx)** utilizando ecossistemas Claude (Anthropic), OpenAI e Google (Gemini).
 10. **Novos Ícones Oficiais em SVG:**
    * Adição e mapeamento de ícones oficiais de alta fidelidade para Python, Docker, Claude, OpenAI, Gemini, Git, MLOps, DevEx, Test Automation e Prompt Engineering.
+11. **Projeto Pessoal SnapBrick AI:**
+   * Substituição da seção de certificações pelo card estruturado do projeto de Visão Computacional SnapBrick AI, com badge de status em desenvolvimento, layout centralizado e tech stack completa (PyTorch, YOLOv11, FastAPI, BlenderProc, React Native, PostgreSQL).
 
 ---
 

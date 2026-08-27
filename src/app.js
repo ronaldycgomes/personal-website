@@ -2,18 +2,18 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import htm from "htm";
 
-import { contentPt } from "./data/content.pt.js?v=20";
-import { contentEn } from "./data/content.en.js?v=20";
+import { contentPt } from "./data/content.pt.js?v=24";
+import { contentEn } from "./data/content.en.js?v=24";
 
-import { Header } from "./components/Header.js?v=20";
-import { Hero } from "./components/Hero.js?v=20";
-import { Metrics } from "./components/Metrics.js?v=20";
-import { Spotlight } from "./components/Spotlight.js?v=20";
-import { Highlights } from "./components/Highlights.js?v=20";
-import { Experience } from "./components/Experience.js?v=20";
-import { Stack } from "./components/Stack.js?v=20";
-import { Education } from "./components/Education.js?v=20";
-import { Contact } from "./components/Contact.js?v=20";
+import { Header } from "./components/Header.js?v=24";
+import { Hero } from "./components/Hero.js?v=24";
+import { Metrics } from "./components/Metrics.js?v=24";
+import { Spotlight } from "./components/Spotlight.js?v=24";
+import { Highlights } from "./components/Highlights.js?v=24";
+import { Experience } from "./components/Experience.js?v=24";
+import { Stack } from "./components/Stack.js?v=24";
+import { Education } from "./components/Education.js?v=24";
+import { Contact } from "./components/Contact.js?v=24";
 
 const html = htm.bind(React.createElement);
 

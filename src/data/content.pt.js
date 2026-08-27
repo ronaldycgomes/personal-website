@@ -89,9 +89,13 @@ export const contentPt = {
     eyebrow: "Formação",
     title: "Base acadêmica"
   },
-  certs: {
-    eyebrow: "Certificações",
-    title: "Aprendizado contínuo"
+  featuredProject: {
+    eyebrow: "Projeto Pessoal",
+    title: "SnapBrick AI",
+    statusBadge: "Em desenvolvimento ativo",
+    description:
+      "Aplicativo móvel projetado para identificar peças soltas de LEGO a partir de uma única foto e sugerir MOCs e sets oficiais montáveis em tempo real. Utiliza um modelo customizado YOLOv11 treinado em dados sintéticos gerados proceduralmente no BlenderProc, amostragem de cores invariante em CIE L*a*b* e um motor combinatório que cruza as peças encontradas com inventários de sets para calcular quais construções são viáveis.",
+    stack: ["PyTorch", "YOLOv11", "FastAPI", "BlenderProc", "React Native", "PostgreSQL"]
   },
   skills: {
     eyebrow: "Competências",
@@ -211,13 +215,6 @@ export const contentPt = {
       logoBg: logoMap.etec.bg,
       fallback: "ET"
     }
-  ],
-  certsList: [
-    "Formação Certificação Java",
-    "AWS Educate Introduction to Generative AI",
-    "Claude Code in Action",
-    "Fundamentos de finanças - FGV",
-    "Dart: criando e manipulando variáveis e listas"
   ],
   skillsList: [
     "MLOps & Machine Learning Pipelines",

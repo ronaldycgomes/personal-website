@@ -89,9 +89,13 @@ export const contentEn = {
     eyebrow: "Education",
     title: "Academic background"
   },
-  certs: {
-    eyebrow: "Certifications",
-    title: "Continuous learning"
+  featuredProject: {
+    eyebrow: "Personal Project",
+    title: "SnapBrick AI",
+    statusBadge: "In Active Development",
+    description:
+      "A mobile application designed to identify scattered, loose LEGO pieces from a single photograph and suggest buildable MOCs and official sets in real time. The system uses a procedural synthetic dataset generated via BlenderProc to train a custom YOLOv11 detector, pairs it with perceptual CIE L*a*b* color mapping, and executes a low-latency constraint matching engine that queries relational catalogs to return fully and partially buildable models based on the detected pieces.",
+    stack: ["PyTorch", "YOLOv11", "FastAPI", "BlenderProc", "React Native", "PostgreSQL"]
   },
   skills: {
     eyebrow: "Skills",
@@ -224,7 +228,7 @@ export const contentEn = {
     "Fraud Prevention & High Scale",
     "Distributed Systems (Java, Go, Kotlin)",
     "AI for DevEx (Claude, OpenAI, Google)",
-    "Observability & P99 Latency",
+    "Observabilidade & P99 Latency",
     "Incident Resolution & RCA"
   ]
 };

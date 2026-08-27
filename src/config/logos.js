@@ -18,6 +18,7 @@ export const techIconMap = {
   "Spring Data":        "./assets/logos/tech/spring.svg",
   "Node.js":            "./assets/logos/tech/nodejs.svg",
   "React":              "./assets/logos/tech/react.svg",
+  "React Native":       "./assets/logos/tech/react.svg",
   "TypeScript":         "./assets/logos/tech/typescript.svg",
   "JavaScript":         "./assets/logos/tech/javascript.svg",
   "HTML":               "./assets/logos/tech/html5.svg",
@@ -49,5 +50,11 @@ export const techIconMap = {
   "Jest":               "./assets/logos/tech/jest.svg",
   "ElasticSearch":      "./assets/logos/tech/elasticsearch.svg",
   "MongoDB":            "./assets/logos/tech/mongodb.svg",
-  "MySQL":              "./assets/logos/tech/mysql.svg"
+  "MySQL":              "./assets/logos/tech/mysql.svg",
+  "PyTorch":            "./assets/logos/tech/pytorch.svg",
+  "FastAPI":            "./assets/logos/tech/fastapi.svg",
+  "PostgreSQL":         "./assets/logos/tech/postgresql.svg",
+  "BlenderProc":        "./assets/logos/tech/blender.svg",
+  "Blender 3D":         "./assets/logos/tech/blender.svg",
+  "YOLOv11":            "./assets/logos/tech/python.svg"
 };

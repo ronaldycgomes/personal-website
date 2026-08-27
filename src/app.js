@@ -2,20 +2,20 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import htm from "htm";
 
-import { contentPt } from "./data/content.pt.js?v=28";
-import { contentEn } from "./data/content.en.js?v=28";
+import { contentPt } from "./data/content.pt.js?v=29";
+import { contentEn } from "./data/content.en.js?v=29";
 
-import { Header } from "./components/Header.js?v=28";
-import { Hero } from "./components/Hero.js?v=28";
-import { Metrics } from "./components/Metrics.js?v=28";
-import { Spotlight } from "./components/Spotlight.js?v=28";
-import { Highlights } from "./components/Highlights.js?v=28";
-import { Experience } from "./components/Experience.js?v=28";
-import { Stack } from "./components/Stack.js?v=28";
-import { Education } from "./components/Education.js?v=28";
-import { Contact } from "./components/Contact.js?v=28";
-import { ScrollProgress } from "./components/ui/ScrollProgress.js?v=28";
-import { BackToTop } from "./components/ui/BackToTop.js?v=28";
+import { Header } from "./components/Header.js?v=29";
+import { Hero } from "./components/Hero.js?v=29";
+import { Metrics } from "./components/Metrics.js?v=29";
+import { Spotlight } from "./components/Spotlight.js?v=29";
+import { Highlights } from "./components/Highlights.js?v=29";
+import { Experience } from "./components/Experience.js?v=29";
+import { Stack } from "./components/Stack.js?v=29";
+import { Education } from "./components/Education.js?v=29";
+import { Contact } from "./components/Contact.js?v=29";
+import { ScrollProgress } from "./components/ui/ScrollProgress.js?v=29";
+import { BackToTop } from "./components/ui/BackToTop.js?v=29";
 
 const html = htm.bind(React.createElement);
 

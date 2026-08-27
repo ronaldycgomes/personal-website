@@ -3,7 +3,7 @@ import { logoMap } from "../config/logos.js";
 export const contentEn = {
   brand: "Ronaldy Gomes",
   hero: {
-    eyebrow: "Software Developer · Fraud Prevention · MLOps · Cloud & AI",
+    eyebrow: "Software Developer · Fraud Prevention · MLOps · Cloud · AI",
     title: "Ronaldy Gomes",
     subtitle:
       "Software developer focused on large-scale distributed systems, MLOps, and engineering-driven AI.",

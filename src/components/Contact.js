@@ -4,9 +4,9 @@ import { ContactIcon } from "./ui/ContactIcon.js";
 
 const html = htm.bind(React.createElement);
 
-const copySvg = '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
-const checkSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
-const externalLinkSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+const copySvg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
+const checkSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+const externalLinkSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
 
 export function Contact({ contacts }) {
   const [copiedKey, setCopiedKey] = useState(null);
@@ -43,7 +43,7 @@ export function Contact({ contacts }) {
                     <div className="min-w-0">
                       <span className="block text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400">${item.label}</span>
                       <a
-                        className="truncate text-sm font-medium text-slate-900 no-underline transition-colors hover:text-orange-500 dark:text-slate-100 dark:hover:text-orange-400"
+                        className="truncate text-sm font-medium text-slate-900 no-underline transition-colors hover:text-orange-500 dark:text-slate-100 dark:hover:text-orange-400 sm:text-base"
                         href=${item.href}
                         target=${item.href.startsWith("http") ? "_blank" : null}
                         rel=${item.href.startsWith("http") ? "noopener noreferrer" : null}
@@ -59,19 +59,18 @@ export function Contact({ contacts }) {
                           <button
                             type="button"
                             onClick=${() => handleCopy(item.label, item.value)}
-                            aria-label=${`Copiar ${item.label}`}
+                            aria-label=${isCopied ? `Copiado: ${item.value}` : `Copiar ${item.label}`}
                             title=${isCopied ? "Copiado!" : `Copiar ${item.label}`}
-                            className=${`inline-flex h-8 items-center gap-1.5 rounded-full px-2.5 text-xs font-medium transition-all ${
+                            className=${`inline-flex h-9 w-9 items-center justify-center rounded-full transition-all ${
                               isCopied
-                                ? "bg-emerald-500/15 text-emerald-600 dark:bg-emerald-400/20 dark:text-emerald-400"
-                                : "text-slate-400 hover:bg-slate-200/60 hover:text-slate-700 dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-slate-200"
+                                ? "bg-emerald-500/15 text-emerald-600 dark:bg-emerald-400/20 dark:text-emerald-400 scale-110"
+                                : "text-slate-400 hover:bg-slate-200/70 hover:text-slate-700 dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-slate-200"
                             }`}
                           >
                             <span
                               aria-hidden="true"
                               dangerouslySetInnerHTML=${{ __html: isCopied ? checkSvg : copySvg }}
                             />
-                            <span>${isCopied ? "Copiado!" : "Copiar"}</span>
                           </button>
                         `
                       : html`
@@ -81,7 +80,7 @@ export function Contact({ contacts }) {
                             rel="noopener noreferrer"
                             aria-label=${`Acessar ${item.label}`}
                             title=${`Abrir ${item.label}`}
-                            className="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-400 transition-all hover:bg-slate-200/60 hover:text-slate-700 dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-slate-200"
+                            className="inline-flex h-9 w-9 items-center justify-center rounded-full text-slate-400 transition-all hover:bg-slate-200/70 hover:text-slate-700 dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-slate-200"
                           >
                             <span
                               aria-hidden="true"
